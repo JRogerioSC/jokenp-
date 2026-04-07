@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jokenpô</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -14,12 +13,16 @@
     <div class="cointainer">
         <h1>jokenpô</h1>
 
-        <div class="buttons">
+        <!-- 🏆 PLACAR DE VITÓRIAS -->
+        <p class="victory-score">
+            🏆 Vitórias: Você <span id="human-victory">0</span> x
+            Alexa <span id="machine-victory">0</span>
+        </p>
 
+        <div class="buttons">
             <button id="pedra" onclick="playHuman('pedra')">&#x270A;</button>
             <button id="papel" onclick="playHuman('papel')">&#x1F590;</button>
             <button id="tesoura" onclick="playHuman('tesoura')">&#x270c;</button>
-
         </div>
 
         <p class="result"></p>
